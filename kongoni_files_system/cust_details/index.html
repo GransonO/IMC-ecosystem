@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Kongoni | Admin Customer Register</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<!-- Fonts and icons     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../query/dist/sweetalert.css">
+</head>
+
+<body>
+<div class="image-container set-full-height" style="background-image: url('assets/img/dear.png')">
+<div class="image-container set-full-height" style="background: rgba(46,46,46,0.9);">
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+                <div class="card wizard-card" data-color="green" id="wizard">
+                <form action="" method="">
+                <!--        You can switch ' data-color="green" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                    	<div class="wizard-header">
+							<h3>
+								<div style="text-align:center;">
+									<img src="assets/img/logo.png"  height="80" width="160">
+								</div>
+                        	</h3>
+                    	</div>
+								<div class="wizard-navigation">
+									<ul>
+			                            <li><a href="#address" data-toggle="tab"> Admin Customer Register </a></li>
+			                        </ul>
+								</div>
+
+		                        <div class="tab-content">
+		                        								
+		                            <div class="tab-pane" id="address">
+		                                <div class="row">
+		                                    <div class="col-sm-12">
+		                                        <h4 class="info-text"> Fill in all the provided entries </h4>
+		                                    </div>
+											<!-- -->
+											
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+	                                        	<div class="form-group label-floating">
+	                                        		<label class="control-label">Registration Card No*:</label>
+	                                    			<input type="number" id="registration_card_no" class="form-control">
+	                                        	</div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Card Status*</label>
+														<select name="card_type"  id="card_type" class="form-control">
+														  <option value="INDIVIDUAL">INDIVIDUAL</option>
+														  <option value="GROUPED">GROUPED</option>
+														</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Group Identifier</label>
+		                                            <input type="text" id="group_identifier" class="form-control">
+		                                        </div>
+		                                    </div>
+											
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Surname</label>
+		                                            <input type="text" id="register_surname" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">First Name*</label>
+	                                            	<input type="text" id="register_first_name" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-10  col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Other Name</label>
+	                                            	<input type="text" id="register_other_name" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Telephone No*:</label>
+		                                            <input type="phone" id="register_phone_number" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Email Address*</label>
+	                                            	<input type="email" id="register_email_address" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">City:</label>
+		                                            <input type="text" id="register_city" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Country</label>
+	                                            	<input type="text" id="register_country" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Date Of Birth:</label>
+		                                            <input type="date" id="register_dob" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Gender</label>
+														<select name="gender_type"  id="gender_type" class="form-control">
+														  <option value="MALE">MALE</option>
+														  <option value="FEMALE">FEMALE</option>
+														</select>
+		                                        </div>
+		                                    </div>
+											
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">ID/Passport*:</label>
+		                                            <input type="text" id="register_id_no" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Passport Expiry Date:</label>
+	                                            	<input type="date" id="passport_expiry" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Nationality:</label>
+		                                            <input type="text" id="register_nationality" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Foreigner Certificate:</label>
+	                                            	<input type="text" id="register_foreigner_certificate" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-3 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Arrival Date*:</label>
+		                                            <input type="date" id="register_arrival_date" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-3">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Arrival Time:</label>
+	                                            	<input type="time" id="register_arrival_time" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-4">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Arrival From:</label>
+	                                            	<input type="text" id="register_arrival_from" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+											
+		                                    <div class="col-sm-3 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Departure Date:</label>
+		                                            <input type="date" id="register_departure_date" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-3">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Departure Time:</label>
+	                                            	<input type="time" id="register_departure_time" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-4">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Destination:</label>
+	                                            	<input type="text" id="register_departure_destination" class="form-control">
+	                                            	</select>
+		                                        </div>
+		                                    </div>
+				
+		                                    <div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Number Of Nights Spent:</label>
+		                                            <input type="number" id="register_nights_spent" class="form-control">
+		                                        </div>
+		                                    </div>
+				
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Name Of Company:</label>
+		                                            <input type="text" id="register_company_name" class="form-control">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Profession:</label>
+		                                            <input type="text" id="register_profession" class="form-control">
+		                                        </div>
+		                                    </div>
+									  <div style="text-align:center;">
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' id="register_new_guest_submit" name='finish' value='Submit Details' />
+									<input type='button' class='btn btn-finish btn-fill btn-info btn-wd btn-sm' id='admin_refresh' name='finish' value='Refresh'/>
+								</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                       <div class="wizard-footer">
+                            	<div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd btn-sm' name='next' value='Next' />
+
+                                </div>
+                                <div class="clearfix"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> <!-- wizard container -->
+        </div>
+        </div> <!-- row -->							
+		</div> <!--  big container -->
+			<div class="footer">
+			   <div class="container">
+					 Developed and maintained by 
+					 <a href="http://www.indulgencemarketing.co.ke/"> 
+						<div class="">
+							<img src="assets/img/logo.png" height="70" width="150">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/gsdk-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+	
+	<!--  Sweet Alert -->
+    <script src="../query/dist/sweetalert-dev.js"></script>
+    <script type='text/javascript' src='../query/script_files/posting_data.js'></script>
+</html>

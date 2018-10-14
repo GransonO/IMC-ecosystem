@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Get Shit Done </title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<!-- Fonts and icons     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../query/dist/sweetalert.css">
+</head>
+
+<body>
+<div class="image-container set-full-height" style="background-image: url('assets/img/dear.png')">
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+
+                <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                    <form action="" method="">
+                <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                    	<div class="wizard-header">
+                        	<h3>
+                        	   <small>Customer Details Entry System.</small>
+                        	</h3>
+                    	</div>
+
+						<div class="wizard-navigation">
+							<ul>
+	                            <li><a href="#about" data-toggle="tab"> Customer </a></li>
+	                            <li><a href="#account" data-toggle="tab">Booking </a></li>
+	                            <li><a href="#address" data-toggle="tab"> Restaurant</a></li>
+	                            <li><a href="#other" data-toggle="tab"> Other Services</a></li>
+	                            <li><a href="#billing" data-toggle="tab"> Hotel Billing</a></li>
+	                        </ul>
+
+						</div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane" id="about">
+                              <div class="row">
+                                  <h4 class="info-text"> Customer Information & Contacts </h4>
+                                  <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                        <label>Folio Number <small>(*)</small></label>
+                                        <input name="folio" id="folio" type="number" class="form-control" >
+                                      </div>
+                                      <div class="form-group">
+                                        <label>GR Card Number<small>(*)</small></label>
+                                        <input name="grcard" id="gr_card" type="number" class="form-control" >
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Guest Name <small>(*)</small></label>
+                                        <input id="guest_name" type="text" class="form-control" >
+                                      </div>                                      
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                            <label>Guest Type</label><br>
+                                             <select name="guest_type" id="guest_type" class="form-control">
+                                                <option value="INDIVIDUAL"> INDIVIDUAL </option>
+                                                <option value="CORPORATE"> CORPORATE </option>
+                                            </select>
+                                          </div>
+                                      <div class="form-group">
+                                          <label>Phone Number </label>
+                                          <input name="phone_no" id="phone_no" type="number" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Email Address </label>
+                                          <input id="email_contact" type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-10 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label>Nationality</label>
+                                          <input name="nationality" id="nationality" type="text" class="form-control">
+                                      </div> 
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="account">
+							
+                                <h4 class="info-text">Customers Booking Information</h4>
+								  <div class="row">
+                                  <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                        <label>Source </label>
+                                        <input name="booking_source" id="source" type="text" class="form-control" >
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Room Number</label>
+                                        <input name="room_no" id="room_no" type="text" class="form-control" required="required">
+                                      </div>
+										<div class="form-group">
+                                            <label>Room Type</label><br>
+                                             <select name="room_type"  id="room_type" class="form-control">
+												  <option value="DELUXE FB">DELUXE FB</option>
+												  <option value="DELUXE BB">DELUXE BB</option>
+												  <option value="DELUXE BO">DELUXE BO</option>
+												  <option value="DELUXE HB">DELUXE HB</option>
+												  <option value="EXECUTIVE FB">EXECUTIVE FB</option>
+												  <option value="EXECUTIVE BB">EXECUTIVE BB</option>
+												  <option value="EXECUTIVE BO">EXECUTIVE BO</option>
+												  <option value="EXECUTIVE HB">EXECUTIVE HB</option>
+                                            </select>
+                                          </div>
+                                      <div class="form-group">
+                                        <label>Tariff</label>
+                                        <input name="tariff" id="tariff" type="number" class="form-control" >
+                                      </div> 									  
+                                  </div>
+                                  <div class="col-sm-5">
+                                     
+                                      <div class="form-group">
+                                          <label>No. of Pax</label>
+                                          <input name="no_pax" id="no_pax" type="number" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Arrival Date </label>
+                                          <input name="arrival_date" id="arrival_date" type="date" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Arrival Time </label>
+                                          <input name="arrival_time" id="arrival_time" type="time" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Departure Date </label>
+                                          <input name="departure_date" id="departure_date" type="date" class="form-control">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-10 col-sm-offset-1" style="text-align:center;">
+                                      <div class="form-group">
+                                          <label>Number of Nights Spent</label>
+                                          <input id="nights_spent" type="number" class="form-control" style="text-align:center;">
+                                      </div> 
+                                  </div>
+                              </div>
+								
+                            </div>
+                            <div class="tab-pane" id="address">
+                                <div class="row">
+                                    <h4 class="info-text"> Restaurant charges </h4>
+                                    <div class="col-sm-5 col-sm-offset-1">
+                                      <div class="form-group">
+                                          <label>Receipt Date</label>
+                                          <input id="restaurant_date" type="date" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Cheque Number </label>
+                                          <input id="restaurant_check_no" type="number" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Amount </label>
+                                          <input id="restaurant_amount" type="number" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Payment Type </label>
+                                          <select type="text" class="form-control" id="restaurant_pay_type" placeholder="Payment Type" required="required">
+											  <option value="UNDEFINED">UNDEFINED</option>
+											  <option value="CASH">CASH</option>
+											  <option value="CHEQUE">CHEQUE</option>
+											  <option value="MPESA">MPESA</option>
+											  <option value="VISA">VISA</option>
+											</select>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                         <div class="form-group">
+                                            <label>Restaurant description</label>
+                                            <textarea class="form-control" id="restaurant_description" placeholder="" rows="10">
+                                            </textarea>
+										</div>
+										<div class="form-group">
+											<button type='button' id="restaurant_btn" class='btn btn-success' name='post' value='Post Restaurant Details'/>Post Restaurant Details</button>
+										</div>
+                                    </div>
+									
+								</div>
+                            </div>
+                            <div class="tab-pane" id="other">
+                                <div class="row">
+                                    <h4 class="info-text"> Other Services charges </h4>
+                                    <div class="col-sm-5 col-sm-offset-1">
+									 <div class="form-group">
+                                          <label>Service Type </label>
+                                          <select type="text" class="form-control" id="service_type" placeholder="Service Type" required="required">
+											  <option value="UNDEFINED">UNDEFINED</option>
+											  <option value="BYCYCLE">BICYCLE HIRE</option>
+											  <option value="LAUNDRY">LAUNDRY</option>
+											</select>
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Receipt Date</label>
+                                          <input id="service_date" type="date" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Cheque Number </label>
+                                          <input  id="service_check_no"  type="number" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Amount </label>
+                                          <input id="service_amount" type="number" class="form-control">
+                                      </div>
+                                     
+                                    </div>
+                                    <div class="col-sm-5">
+									
+                                      <div class="form-group">
+                                          <label>Service Payment Type </label>
+                                          <select type="text" class="form-control" id="service_pay_type" placeholder="Payment Type" required="required">
+											  <option value="UNDEFINED">UNDEFINED</option>
+											  <option value="CASH">CASH</option>
+											  <option value="CHEQUE">CHEQUE</option>
+											  <option value="MPESA">MPESA</option>
+											  <option value="VISA">VISA</option>
+											</select>
+                                      </div>
+                                         <div class="form-group">
+                                            <label>Post these details </label>
+										</div>
+										<div class="form-group">
+											<button type='button' id="service_btn" class='btn btn-success' name='post' value='Post Other Details'>Post Other Details</button>
+										</div>
+                                    </div>
+									
+								</div>
+                            </div>
+							
+                            <div class="tab-pane" id="billing">
+                              <div class="row"  style="text-align:center;">
+                                  <h4 class="info-text"> Customer Billing Information</h4>
+                                  <div class="col-sm-10 col-sm-offset-1">
+                                      <div class="form-group">
+                                        <label>Guest Direct Payment</label>
+                                        <input id="guest_pay" type="number" class="form-control" >
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Bill to OTS</label>
+                                        <input id="ots_bill" type="number" class="form-control" >
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Final Total</label>
+                                        <input id="total_bill" type="number" class="form-control" >
+                                      </div>                                      
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="wizard-footer height-wizard">
+                            <div class="pull-right">
+                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
+                                <button type='button' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' id="submit_btn" value='Finish'>Finish</button>
+
+                            </div>
+
+                            <div class="pull-left">
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> <!-- wizard container -->
+        </div>
+        </div><!-- end row -->
+    </div> <!--  big container -->
+
+</div>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/gsdk-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+	
+	<!--  Sweet Alert -->
+    <script src="../query/dist/sweetalert-dev.js"></script>
+    <script type='text/javascript' src='../query/script_files/posting_data.js'></script>
+	
+<script>
+	// register jQuery extension
+	jQuery.extend(jQuery.expr[':'], {
+		focusable: function (el, index, selector) {
+			return $(el).is('a, button, :input, [tabindex]');
+		}
+	});
+
+	$(document).on('keydown', ':focusable', function (e) {
+		if (e.which == 13) {
+			e.preventDefault();
+			// Get all focusable elements on the page
+			var $canfocus = $(':focusable');
+			var index = $canfocus.index(this) + 1;
+			if (index >= $canfocus.length) index = 0;
+			$canfocus.eq(index).focus();
+		}
+	});
+</script>
+
+</html>

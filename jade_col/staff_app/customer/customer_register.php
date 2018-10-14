@@ -1,0 +1,100 @@
+<?php 
+include '../query/php_files/core/init.php';
+
+$USER_ID = $_SESSION['ID'];
+	if($USER_ID === null){
+		//Show loggin error
+	header('Location: ../access/access_error.php');
+	
+	}else{
+		//do nothing
+	}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Angling Booking Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"
+	/>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tags -->
+	<!-- Calendar -->
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<!-- //Calendar -->
+	<!--stylesheets-->
+	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+	<!--//style sheet end here-->
+	<link href="//fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet">
+</head>
+
+<body style="overflow-y:scroll;">
+	<h1 class="header-w3ls">
+		REGISTRATION</h1>
+	<div class="appointment-w3">
+		<form action="#" method="post">
+		
+				<div class="form-right-w3ls">
+					<input type="text" class="buttom" name="register_member_name" id="register_member_name" placeholder="Name*" required="required">
+				</div><br>	
+				<div class="form-control">
+					<select class="form-control" name="gender" id="gender">
+					<option value="">Gender</option>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+					<div class="clearfix"></div>
+				</div><br>	
+
+				<div class="form-right-w3ls">
+
+					<input class="buttom" type="text" name="email-reg" id="email_reg" placeholder="Email*" required="required">
+				</div><br>	
+				<div class="form-right-w3ls ">
+
+					<input class="buttom" type="text" name="register_mobile" id="register_mobile" placeholder="Phone Number*" required="required">
+					<div class="clearfix"></div>
+				</div><br>	
+
+				<div class="form-control">
+					<select class="form-control" name="service_type" id="service_type">
+					<option value="">Category of interest*</option>
+						<option>Men </option>
+						<option>Ladies</option>
+						<option>Kids</option>
+						<option>Other Accessories</option>
+					</select>
+				</div><br>	
+				<div class="form-control">
+					<select class="form-control" name="customer_type" id="customer_type">
+					<option value="">Customer Type</option>
+						<option>Individual</option>
+						<option>Company</option>
+					</select>
+				</div><br>	
+			<div class="form-control-w3l">
+				<textarea name="customer_comments" id="customer_comments" placeholder="What did the customer say..."></textarea>
+			</div><br>	
+			<div class="btnn">
+				<input type="button" id="reg-member-submit" value="Submit">
+			</div>
+		</form>
+	</div>
+	<!-- js -->
+	<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+	<script type='text/javascript' src='../query/script_files/global.js'></script>
+	<script type="text/javascript" src="js/notify.min.js"></script>
+	<!-- //js -->
+</body>
+
+</html>
